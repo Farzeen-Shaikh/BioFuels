@@ -16,7 +16,6 @@ mongodb.localconnect();
 server.use(bodyParser.json());
 server.use("/api/user", userRoutes);
 server.use("/api/production", productionRoutes);
-
 server.use("/api/warehouse",warehouseRoutes);
 
 server.get("/",(req,res)=>{
